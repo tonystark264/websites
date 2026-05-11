@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>College Information</title>
+
+<style>
+
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+padding:10px;
+}
+
+</style>
+
+<script>
+
+function showDept(){
+
+document.getElementById("demo").innerHTML=
+"Department: Computer Engineering";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>College Information</h1>
+
+<table>
+
+<tr>
+<th>College</th>
+<th>Details</th>
+</tr>
+
+<tr>
+
+<td>XYZ College</td>
+
+<td>
+
+<table>
+
+<tr>
+<td>Courses</td>
+<td>BCA, BSc, BTech</td>
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<img src="college.jpg" width="200">
+
+<br><br>
+
+<a href="https://mu.ac.in">
+University Website
+</a>
+
+<p id="demo"></p>
+
+<button onclick="showDept()">
+Show Department
+</button>
+
+</body>
+</html>
