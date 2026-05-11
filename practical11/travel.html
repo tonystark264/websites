@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Booking</title>
+
+<script>
+function showPlace(){
+let place=document.getElementById("place").value;
+document.getElementById("demo").innerHTML=
+"Selected Place: "+place;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Travel Booking</h2>
+
+<form>
+
+Name:
+<input type="text"><br><br>
+
+<select id="place" onchange="showPlace()">
+<option>Goa</option>
+<option>Manali</option>
+<option>Kashmir</option>
+</select>
+
+<p id="demo"></p>
+
+<table border="1">
+
+<tr>
+<th>Package</th>
+<th>Days</th>
+</tr>
+
+<tr>
+<td>Goa</td>
+<td>
+
+<table border="1">
+<tr>
+<td>3 Days</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
