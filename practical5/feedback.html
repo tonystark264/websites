@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Feedback Form</title>
+
+<script>
+
+function validate(){
+
+let feedback=
+document.getElementById("feed").value;
+
+if(feedback==""){
+alert("Enter Feedback");
+return false;
+}
+
+alert("Feedback Submitted");
+
+return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form onsubmit="return validate()">
+
+<h2>Feedback Form</h2>
+
+<textarea id="feed"></textarea>
+
+<br><br>
+
+<input type="radio" name="rate">Good
+<input type="radio" name="rate">Average
+<input type="radio" name="rate">Poor
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
