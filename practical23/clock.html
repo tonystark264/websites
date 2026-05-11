@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Digital Clock</title>
+
+<script>
+
+function showTime(){
+
+let date=new Date();
+
+document.getElementById("clock").innerHTML=
+date.toLocaleTimeString();
+
+}
+
+setInterval(showTime,1000);
+
+</script>
+
+</head>
+
+<body onload="showTime()">
+
+<h1 id="clock"></h1>
+
+</body>
+</html>
