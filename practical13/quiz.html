@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quiz Registration</title>
+
+<style>
+
+body{
+font-family:Arial;
+}
+
+</style>
+
+<script>
+
+function showInfo(){
+
+let name=
+document.getElementById("name").value;
+
+document.getElementById("demo").innerHTML=
+"Participant: "+name;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Quiz Registration</h2>
+
+Name:
+<input type="text" id="name">
+
+<br><br>
+
+Course:
+<select>
+<option>BCA</option>
+<option>BSc</option>
+</select>
+
+<br><br>
+
+<button onclick="showInfo()">
+Register
+</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
